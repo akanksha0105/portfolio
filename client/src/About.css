@@ -1,0 +1,18 @@
+.about {
+	background-color: #0c0b0b;
+	/* border: 1px solid red; */
+	display: flex;
+	font-family: Basiercircle, Arial, sans-serif;
+	/* display: block; */
+	width: 80%;
+	height: 400px;
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: 140px;
+	padding-top: 210px;
+	color: white;
+	line-height: 70px;
+	font-size: 50px;
+	display: flex;
+	justify-content: space-between;
+}

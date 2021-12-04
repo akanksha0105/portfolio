@@ -1,0 +1,18 @@
+.footer__bar {
+	background-color: #0c0b0b;
+	/* border: 1px solid red; */
+	display: flex;
+	font-family: Basiercircle, Arial, sans-serif;
+	/* display: block; */
+	width: 80%;
+	height: 50px;
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: 140px;
+
+	color: white;
+	margin-top: 0px;
+	display: flex;
+	justify-content: space-between;
+	color: #a4a4a4;
+}
