@@ -5,7 +5,8 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #0c0b0b;
+	/* background-color: #0c0b0b; */
+	background-color: hsl(0%, 0%, 87%);
 	font-family: Basiercircle, Arial, sans-serif;
 	color: #fff;
 	font-size: 20px;

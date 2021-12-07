@@ -1,6 +1,6 @@
 .about {
 	background-color: #0c0b0b;
-	/* border: 1px solid red; */
+	border: 1px solid red;
 	display: flex;
 	font-family: Basiercircle, Arial, sans-serif;
 	/* display: block; */
@@ -15,4 +15,5 @@
 	font-size: 50px;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 70px;
 }

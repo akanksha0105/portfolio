@@ -1,6 +1,11 @@
+.home {
+	border: 4px solid purple;
+	background-color: #0c0b0b;
+}
+
 .header {
 	background-color: #0c0b0b;
-	/* border: 1px solid red; */
+	border: 1px solid red;
 	display: flex;
 	font-family: Basiercircle, Arial, sans-serif;
 	/* display: block; */
@@ -14,8 +19,13 @@
 }
 
 .header__left {
-	/* border: 1px solid lightgreen; */
+	border: 1px solid lightgreen;
 	flex: 1;
+}
+
+.header__left:hover {
+	color: hsl(8, 75%, 51%);
+	cursor: pointer;
 }
 
 .profile__name {
@@ -27,11 +37,16 @@
 }
 .header__right {
 	flex: 1;
-	/* border: 1px solid lightgreen; */
+	border: 1px solid lightgreen;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	gap: 35px;
 	font-size: 16px;
 	color: #a4a4a4;
+}
+
+.header__right:hover {
+	color: hsl(8, 75%, 51%);
+	cursor: pointer;
 }

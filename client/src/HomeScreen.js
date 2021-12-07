@@ -1,15 +1,12 @@
 import React from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import About from "./About";
+
 import Work from "./Work";
 import Contact from "./Contact";
+import Home from "./Home";
 function HomeScreen() {
 	return (
 		<div className="home__screen">
-			<Header />
-			<About />
-			{/* <Footer /> */}
+			<Home />
 			<Work />
 			<Contact />
 		</div>
