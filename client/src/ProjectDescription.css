@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400&family=Cormorant+Garamond:wght@300&family=EB+Garamond&display=swap");
 .project__description {
-	/* border: 1px solid #b46e53; */
+	margin-top: 50px;
+	/* border: 1px solid #999999; */
+
 	flex: 1;
 	padding-top: 80px;
 	display: flex;
@@ -35,7 +37,21 @@
 }
 
 .project__card__description {
-	/* border: 1px solid #b46e53; */
+	/* border: 1px solid blue;
+	padding: 20px 0px;
+	background-color: transparent;
+
+	position: absolute;
+	margin-top: 60px;
+	width: 600px;
+	font-size: 0.9em;
+	letter-spacing: 0.8px;
+	font-family: "Alegreya Sans", sans-serif;
+	color: hsl(0, 0%, 40%);
+	padding-right: 10px;
+	font-weight: 400;
+	border-radius: 5px;
+	padding-left: 10px; */
 
 	padding: 20px 0px;
 	background-color: transparent;
@@ -46,10 +62,6 @@
 	font-size: 0.9em;
 	letter-spacing: 0.8px;
 	font-family: "Alegreya Sans", sans-serif;
-
-	/* color: white; */
-
-	/* border: 1px solid #999999; */
 	color: black;
 	background-color: #b7c6c9;
 	font-weight: 400;

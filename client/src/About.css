@@ -1,9 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400&family=Amiri&family=Cormorant+Garamond:wght@300&family=EB+Garamond&display=swap");
+
 .about {
-	background-color: #0c0b0b;
+	background-color: hsl(0%, 0%, 87%);
+	/* border: 1px solid red; */
+	text-align: center;
+	color: black;
+	height: 380px;
+	font-size: 50px;
+	padding-top: 50px;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-bottom: 120px;
+	font-family: "Amiri", serif;
+	/* font-family: Basiercircle, Arial, sans-serif;
+	width: 80%;
+	height: 400px;
+	max-width: 1000px;
+	margin-right: auto;
+	margin-left: 140px;
+	padding-top: 210px;
+	color: black;
+	line-height: 70px;
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 70px;
+	margin-top: 0px; */
+
+	/* background-color: #0c0b0b;
 	border: 1px solid red;
 	display: flex;
 	font-family: Basiercircle, Arial, sans-serif;
-	/* display: block; */
 	width: 80%;
 	height: 400px;
 	max-width: 1000px;
@@ -15,5 +41,24 @@
 	font-size: 50px;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 70px;
+	margin-bottom: 70px; */
+}
+
+.about__text {
+	/* border: 4px solid blue; */
+	margin-top: 70px;
+	/* --bs-gutter-x: 1.5rem; */
+}
+
+.about__text > h1 {
+	font-family: "Amiri", serif;
+	font-weight: 400;
+	font-size: 4rem;
+	line-height: 1.4;
+	letter-spacing: -0.025em;
+}
+
+::selection {
+	background: hsl(8, 95%, 57%);
+	color: white;
 }

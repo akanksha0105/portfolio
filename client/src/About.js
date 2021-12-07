@@ -4,9 +4,13 @@ import "./About.css";
 function About() {
 	return (
 		<div className="about">
-			<div>
-				Hey, I'm Akanksha. A Front-end Developer who loves minimalist and
-				functional design.
+			<div className="about__text">
+				<h1>
+					Hey, I'm Akanksha.
+					<br />A Front-end Developer who loves
+					<br />
+					minimalist and functional design.
+				</h1>
 			</div>
 		</div>
 	);

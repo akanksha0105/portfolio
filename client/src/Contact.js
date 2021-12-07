@@ -15,7 +15,7 @@ function Contact() {
 					</a>
 					{/* </h2> */}
 				</div>
-				<div className="line__separator"></div>
+				<div className="line__separator__different"></div>
 				<div className="contact__bar">
 					<div className="copyright__bar">
 						{" "}
