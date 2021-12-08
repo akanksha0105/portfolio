@@ -6,10 +6,12 @@ function About() {
 		<div className="about">
 			<div className="about__text">
 				<h1>
-					Hey, I'm Akanksha.
-					<br />A Front-end Developer who loves
-					<br />
-					minimalist and functional design.
+					<p>
+						Hey, I'm <span id="akanksha">Akanksha </span>
+						<br />A Front-end Developer who loves
+						<br />
+						minimalist and functional design.
+					</p>
 				</h1>
 			</div>
 		</div>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProjectDescription.css";
 // import { FontAwesomeIcon } from "@fortawesome/fontawesome-svg-core";
+// import "./trash.css";
 function ProjectDescription() {
 	return (
 		<div className="project__description">
@@ -9,23 +10,33 @@ function ProjectDescription() {
 				<a href=""></a>
 			</div>
 
-			<div className="project__card__description">
-				A web application that allows a user to transmit URL seamlessly across
-				the devices.
+			<div className="box">
+				<div className="project__card__description">
+					A web application that allows a user to transmit URL seamlessly across
+					the devices. It offers offline messaging with the help of push
+					notifications
+				</div>
 			</div>
-
 			<div className="project__technologies">
 				<div>React</div>
 				<div>Express</div>
 				<div>Node.js</div>
 				<div>Push API</div>
 			</div>
-			{/* <div className="project__link__icons">
-				<a className="github__link">
-					<i class="fa-brands fa-gitlab"></i>
+			<div className="project__link__icons">
+				<a
+					className="gitlab__link"
+					href="https://gitlab.com/mittalakanksha0105">
+					<i
+						class="fa fa-gitlab"
+						style={({ fontSize: "48px" }, { color: "black" })}></i>
 				</a>
-				<a className="external"></a>
-			</div> */}
+				<a className="external">
+					<i
+						class="fa fa-external-link"
+						style={({ fontSize: "48px" }, { color: "black" })}></i>
+				</a>
+			</div>
 		</div>
 	);
 }

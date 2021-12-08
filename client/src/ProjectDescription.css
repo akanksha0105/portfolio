@@ -19,10 +19,11 @@
 	font-family: "Cormorant Garamond", serif;
 	font-size: 38px;
 	font-weight: bold;
-	border-bottom: 1px solid black;
+	/* border-bottom: 1px solid black; */
 	width: max-content;
 	/* padding-bottom: 2px; */
 	border-width: 2px;
+	/* padding-left: 13px; */
 	/* opacity: 0.5; */
 }
 
@@ -31,29 +32,37 @@
 	/* color: #5e2d1f; */
 
 	opacity: 1;
+	color: hsl(8, 95%, 57%);
+	/* border-bottom-color: hsl(8, 95%, 57%); */
 
 	/* border-bottom: 1px solid black;
 	border-width: 2px; */
 }
 
-.project__card__description {
-	/* border: 1px solid blue;
-	padding: 20px 0px;
-	background-color: transparent;
-
+.box {
+	border: 1px solid hsl(8, 95%, 87%);
+	/* background-color: hsl(8, 95%, 87%); */
+	z-index: 2;
 	position: absolute;
-	margin-top: 60px;
-	width: 600px;
+	margin-top: 70px;
+	width: 520px;
 	font-size: 0.9em;
 	letter-spacing: 0.8px;
 	font-family: "Alegreya Sans", sans-serif;
 	color: hsl(0, 0%, 40%);
-	padding-right: 10px;
+	color: black;
+
 	font-weight: 400;
 	border-radius: 5px;
-	padding-left: 10px; */
+	padding: 13px;
+}
 
-	padding: 20px 0px;
+.box:hover {
+	border: 1px solid hsl(8, 95%, 57%);
+}
+
+.project__card__description {
+	/* padding: 20px 0px;
 	background-color: transparent;
 	z-index: 2;
 	position: absolute;
@@ -66,7 +75,12 @@
 	background-color: #b7c6c9;
 	font-weight: 400;
 	border-radius: 5px;
-	padding-left: 10px;
+
+	padding-left: 10px; */
+	/* border: 2px solid blue; */
+	background-color: hsl(0, 0%, 90%);
+	border-radius: 5px;
+	padding: 5px;
 }
 
 /* font-family: "Cormorant Garamond", serif; */
@@ -75,30 +89,22 @@
 	display: flex;
 	/* border: 1px solid turquoise; */
 	gap: 20px;
-	margin-top: 115px;
+	margin-top: 165px;
 	padding: 5px;
 	padding-top: 10px;
 	font-size: 0.8em;
 	padding-left: 0px;
-	color: #a4a4a4;
+	color: black;
 	font-family: "Alegreya Sans", sans-serif;
 	font-weight: 600;
 }
 
 .project__link__icons {
 	display: flex;
-	border: 1px solid turquoise;
+	/* border: 1px solid turquoise; */
 	gap: 20px;
 	padding-top: 5px;
-}
+	justify-content: flex-start;
 
-.project__link__icons a svg {
-	width: 20px;
-	height: 20px;
-	justify-content: center;
-}
-.project__links__icons a.external svg {
-	width: 22px;
-	height: 22px;
-	margin-top: -4px;
+	align-items: center;
 }

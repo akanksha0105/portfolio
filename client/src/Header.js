@@ -28,7 +28,10 @@ function Header() {
 					<div className="header__option__2">Contact</div>
 				</Link> */}
 
-				<a className="social__media__icon" href="#" target="_blank">
+				<a
+					className="social__media__icon"
+					href="https://www.linkedin.com/in/akanksha-mittal0105/"
+					target="_blank">
 					{/* <LinkedInIcon sx={{  }} /> */}
 					<LinkedInIcon />
 				</a>

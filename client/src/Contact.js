@@ -1,5 +1,9 @@
 import React from "react";
 import "./Contact.css";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Contact() {
 	return (
@@ -21,7 +25,7 @@ function Contact() {
 						{" "}
 						© 2021 Akanksha Mittal, All Rights Reserved.
 					</div>
-					<div className="contact__channels">
+					{/* <div className="contact__channels">
 						<a
 							href="https://www.linkedin.com/in/akanksha-mittal0105/"
 							target="_blank"
@@ -31,6 +35,25 @@ function Contact() {
 
 						<a href="" target="_blank" className="contact__channel__link">
 							Twitter
+						</a>
+					</div> */}
+
+					<div className="channels">
+						<a
+							className="social__icon"
+							href="https://www.linkedin.com/in/akanksha-mittal0105/"
+							target="_blank">
+							<LinkedInIcon />
+						</a>
+
+						<a className="social__icon" href="#" target="_blank">
+							<TwitterIcon />
+						</a>
+						<a className="social__icon" href="#" target="_blank">
+							<FacebookOutlinedIcon />
+						</a>
+						<a className="social__icon" href="#" target="_blank">
+							<InstagramIcon />
 						</a>
 					</div>
 				</div>

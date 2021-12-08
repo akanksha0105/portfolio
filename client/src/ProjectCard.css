@@ -19,3 +19,7 @@
 	filter: none;
 	transform: scale(1.1);
 }
+
+/* .face:hover ~ .box {
+	border: 1px solid hsl(8, 95%, 57%);
+} */
