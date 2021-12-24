@@ -36,7 +36,9 @@ function Header() {
 						LinkedIn
 					</a>
 				</div>
-				<div className="header__option__right">Resume</div>
+				<div className="header__option__right">
+					<a href="">Resume</a>
+				</div>
 				{/* <a
 					className="social__media__icon"
 					href="https://www.linkedin.com/in/akanksha-mittal0105/"

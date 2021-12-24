@@ -18,6 +18,12 @@ function ProjectDescription() {
 					notifications
 				</div>
 			</div>
+
+			<div className="description">
+				A web application that allows a user to transmit URL seamlessly across
+				the devices. It offers offline messaging with the help of push
+				notifications
+			</div>
 			<div className="project__technologies">
 				<div>React</div>
 				<div>Express</div>

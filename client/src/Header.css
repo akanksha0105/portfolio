@@ -2,16 +2,24 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400&family=Amiri&family=Baloo+2&family=Cardo&family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Frank+Ruhl+Libre:wght@400;500;700&family=Nanum+Myeongjo:wght@800&family=PT+Sans&display=swap");
 
+.home__screen {
+	border: 4px solid lightseagreen;
+}
 .home {
-	border: 4px solid purple;
+	/* border: 4px solid purple; */
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	background-color: hsl(0, 0%, 100%);
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
-	height: 100vh;
 
-	/* justify-content: center; */
-	/* align-items: center; */
+	/* 
+	width: 100vw;
+*/
+}
+
+.logo {
+	border: 1px solid green;
 }
 
 .header {
@@ -26,6 +34,8 @@
 	height: 25%;
 }
 
+/* Change the dimensions of image in percentage */
+
 .logo > img {
 	border: 1px solid red;
 	width: 150px;
@@ -39,16 +49,13 @@
 	padding-bottom: 0;
 	justify-content: flex-start;
 	align-items: center;
-
 	font-size: 1.1rem;
 	font-weight: 700;
-
 	line-height: 1;
-	letter-spacing: 0.5px;
-
+	letter-spacing: 0.1vw;
 	font-family: "PT Sans", sans-serif;
 	text-transform: uppercase;
-	padding-left: 1%;
+	padding-left: 1.2vw;
 }
 
 .header__option__left {
@@ -97,17 +104,16 @@
 	flex: 1;
 	justify-content: flex-end;
 	align-items: center;
-	gap: 15px;
 	color: black;
-	padding-right: 1%;
+	padding-right: 1.2vw;
 
 	/* new proposed right header */
 	align-items: center;
-	gap: 25px;
+	gap: 1.2vw;
 	font-size: 1.1rem;
 	font-weight: 700;
 	line-height: 1;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.1vw;
 	font-family: "PT Sans", sans-serif;
 	text-transform: uppercase;
 }
@@ -143,13 +149,14 @@
 	border-radius: 100%;
 	left: calc(50% - 8px);
 }
-.header__option__right:hover {
+.header__option__right > a:hover {
 	color: hsl(8, 95%, 57%);
 	cursor: pointer;
 }
 
 .header__option__right > a {
 	text-decoration: none;
+	color: black;
 }
 
 @media screen and (max-width: 484px) {

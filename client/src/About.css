@@ -2,7 +2,7 @@
 
 .about {
 	background-color: hsl(0%, 0%, 87%);
-	border: 4px solid yellow;
+	/* border: 4px solid yellow; */
 	/* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
 	text-align: center;
 	color: black;
@@ -31,12 +31,22 @@
 	color: hsl(8, 95%, 57%);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 	.about__text > h1 {
 		font-family: "Amiri", serif;
 		font-weight: 400;
 		font-size: 2em;
 		line-height: 1.4;
 		letter-spacing: -0.025em;
+	}
+}
+
+@media screen and (max-width: 250) {
+	.about {
+		display: block;
+	}
+	.about__text {
+		font-size: 4.2vw;
+		line-height: 1;
 	}
 }

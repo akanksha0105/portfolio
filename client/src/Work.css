@@ -10,7 +10,7 @@
 	border: 4px solid palevioletred;
 	display: flex;
 	justify-content: center;
-	width: 100vw;
+	/* width: 100%; */
 	height: 100vh;
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -24,18 +24,6 @@
 }
 
 @media screen and (max-width: 600px) {
-	.work {
-		height: 100vh;
-		display: flex;
-		justify-content: center;
-		/* align-items: center; */
-		border: 4px solid palevioletred;
-		display: flex;
-		width: 100vw;
-		height: 100vh;
-		padding: 5%;
-	}
-
 	.work__box {
 		display: flex;
 		flex-direction: column-reverse;

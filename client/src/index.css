@@ -1,4 +1,4 @@
-html ::-webkit-scrollbar {
+/* html ::-webkit-scrollbar {
 	width: 10px;
 }
 
@@ -8,7 +8,7 @@ html ::-webkit-scrollbar-thumb {
 
 html ::-webkit-scrollbar-track {
 	background-color: hsl(0, 0%, 92%);
-}
+} */
 
 body {
 	margin: 0;
@@ -42,18 +42,4 @@ code {
 html,
 body {
 	overflow-x: hidden;
-}
-
-@media screen and (max-width: 600px) {
-	html ::-webkit-scrollbar {
-		display: none;
-	}
-
-	html ::-webkit-scrollbar-thumb {
-		background-color: hsl(8, 95%, 57%);
-	}
-
-	html ::-webkit-scrollbar-track {
-		background-color: hsl(0, 0%, 92%);
-	}
 }
