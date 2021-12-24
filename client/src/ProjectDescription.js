@@ -2,7 +2,7 @@ import React from "react";
 import "./ProjectDescription.css";
 // import { FontAwesomeIcon } from "@fortawesome/fontawesome-svg-core";
 // import "./trash.css";
-import { Icon } from "@iconify/react";
+
 function ProjectDescription() {
 	return (
 		<div className="project__description">
