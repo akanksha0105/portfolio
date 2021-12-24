@@ -1,12 +1,18 @@
 .card {
 	flex: 1.3;
-	border: 1px solid red;
+	border: 4px solid red;
 	border-radius: 5px;
+	/* margin-top: 7%; */
+	margin-bottom: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	position: static;
+	z-index: 1;
 }
 
 .face {
 	background: url("./images/kittyshare__2.png");
-	filter: grayscale(100%);
+	filter: grayscale(30%);
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -20,6 +26,20 @@
 	transform: scale(1.1);
 }
 
-/* .face:hover ~ .box {
-	border: 1px solid hsl(8, 95%, 57%);
-} */
+@media screen and (max-width: 600px) {
+	.card {
+		margin: 0%;
+		flex: 2;
+		width: 100%;
+		padding: 0%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		display: none;
+	}
+
+	.work__box {
+		display: flex;
+		/* flex-direction: column-reverse; */
+	}
+}

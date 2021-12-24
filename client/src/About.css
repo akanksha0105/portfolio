@@ -2,52 +2,16 @@
 
 .about {
 	background-color: hsl(0%, 0%, 87%);
-	/* border: 1px solid red; */
+	border: 4px solid yellow;
+	/* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
 	text-align: center;
 	color: black;
-	height: 380px;
-	font-size: 50px;
-	padding-top: 50px;
-	padding-left: 70px;
-	padding-right: 70px;
-	padding-bottom: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* padding-bottom: 5%; */
+	height: 75%;
 	font-family: "Amiri", serif;
-	/* font-family: Basiercircle, Arial, sans-serif;
-	width: 80%;
-	height: 400px;
-	max-width: 1000px;
-	margin-right: auto;
-	margin-left: 140px;
-	padding-top: 210px;
-	color: black;
-	line-height: 70px;
-	font-size: 50px;
-	text-align: center;
-	margin-bottom: 70px;
-	margin-top: 0px; */
-
-	/* background-color: #0c0b0b;
-	border: 1px solid red;
-	display: flex;
-	font-family: Basiercircle, Arial, sans-serif;
-	width: 80%;
-	height: 400px;
-	max-width: 1000px;
-	margin-right: auto;
-	margin-left: 140px;
-	padding-top: 210px;
-	color: white;
-	line-height: 70px;
-	font-size: 50px;
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 70px; */
-}
-
-.about__text {
-	/* border: 4px solid blue; */
-	margin-top: 70px;
-	/* --bs-gutter-x: 1.5rem; */
 }
 
 .about__text > h1 {
@@ -65,4 +29,14 @@
 
 #akanksha {
 	color: hsl(8, 95%, 57%);
+}
+
+@media screen and (max-width: 800px) {
+	.about__text > h1 {
+		font-family: "Amiri", serif;
+		font-weight: 400;
+		font-size: 2em;
+		line-height: 1.4;
+		letter-spacing: -0.025em;
+	}
 }

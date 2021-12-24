@@ -38,3 +38,22 @@ code {
 	background: hsl(8, 95%, 57%);
 	color: white;
 } */
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px) {
+	html ::-webkit-scrollbar {
+		display: none;
+	}
+
+	html ::-webkit-scrollbar-thumb {
+		background-color: hsl(8, 95%, 57%);
+	}
+
+	html ::-webkit-scrollbar-track {
+		background-color: hsl(0, 0%, 92%);
+	}
+}

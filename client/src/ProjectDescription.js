@@ -2,6 +2,7 @@ import React from "react";
 import "./ProjectDescription.css";
 // import { FontAwesomeIcon } from "@fortawesome/fontawesome-svg-core";
 // import "./trash.css";
+import { Icon } from "@iconify/react";
 function ProjectDescription() {
 	return (
 		<div className="project__description">
@@ -26,12 +27,13 @@ function ProjectDescription() {
 			<div className="project__link__icons">
 				<a
 					className="gitlab__link"
-					href="https://gitlab.com/mittalakanksha0105">
+					href="https://gitlab.com/mittalakanksha0105/kitty-share">
 					<i
 						class="fa fa-gitlab"
 						style={({ fontSize: "48px" }, { color: "black" })}></i>
 				</a>
-				<a className="external">
+
+				<a className="external" href="https://kittyshare.xyz/">
 					<i
 						class="fa fa-external-link"
 						style={({ fontSize: "48px" }, { color: "black" })}></i>

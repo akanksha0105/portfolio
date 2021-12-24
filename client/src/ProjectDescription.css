@@ -1,51 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400&family=Cormorant+Garamond:wght@300&family=EB+Garamond&display=swap");
 .project__description {
-	margin-top: 50px;
-	/* border: 1px solid #999999; */
+	/* margin-top: 50px; */
+
+	border: 4px solid blue;
 
 	flex: 1;
-	padding-top: 80px;
+
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 150px;
+	justify-content: center;
+	align-items: flex-start;
+	/* padding-bottom: 150px; */
 	letter-spacing: 0.8px;
+	margin-bottom: 10%;
+	/* margin-right: 10%; */
+	margin-top: 5%;
+	margin-left: 10%;
+	gap: 2%;
 }
 
 .project__name {
-	margin: 0px 0px 10px;
-	font-size: 1.2em;
+	border: 2px solid yellowgreen;
+	/* margin: 0px 0px 10px; */
+	font-size: 1.8em;
 	line-height: 1.1;
 	color: black;
 	font-family: "Cormorant Garamond", serif;
-	font-size: 38px;
 	font-weight: bold;
-	/* border-bottom: 1px solid black; */
 	width: max-content;
-	/* padding-bottom: 2px; */
-	border-width: 2px;
-	/* padding-left: 13px; */
-	/* opacity: 0.5; */
 }
 
 .project__name:hover {
-	/* color: #b46e53; */
-	/* color: #5e2d1f; */
-
 	opacity: 1;
 	color: hsl(8, 95%, 57%);
-	/* border-bottom-color: hsl(8, 95%, 57%); */
-
-	/* border-bottom: 1px solid black;
-	border-width: 2px; */
 }
 
 .box {
 	border: 1px solid hsl(8, 95%, 87%);
 	/* background-color: hsl(8, 95%, 87%); */
-	z-index: 2;
-	position: absolute;
-	margin-top: 70px;
-	width: 520px;
+	/* z-index: 2;
+	position: absolute; */
+	/* margin-top: 2%; */
+	width: 105%;
+
 	font-size: 0.9em;
 	letter-spacing: 0.8px;
 	font-family: "Alegreya Sans", sans-serif;
@@ -55,6 +52,8 @@
 	font-weight: 400;
 	border-radius: 5px;
 	padding: 13px;
+	position: relative;
+	z-index: 2;
 }
 
 .box:hover {
@@ -62,22 +61,7 @@
 }
 
 .project__card__description {
-	/* padding: 20px 0px;
-	background-color: transparent;
-	z-index: 2;
-	position: absolute;
-	margin-top: 60px;
-	width: 600px;
-	font-size: 0.9em;
-	letter-spacing: 0.8px;
-	font-family: "Alegreya Sans", sans-serif;
-	color: black;
-	background-color: #b7c6c9;
-	font-weight: 400;
-	border-radius: 5px;
-
-	padding-left: 10px; */
-	/* border: 2px solid blue; */
+	border: 2px solid blue;
 	background-color: hsl(0, 0%, 90%);
 	border-radius: 5px;
 	padding: 5px;
@@ -87,9 +71,9 @@
 
 .project__technologies {
 	display: flex;
-	/* border: 1px solid turquoise; */
+	border: 1px solid turquoise;
 	gap: 20px;
-	margin-top: 165px;
+	/* margin-top: 41%; */
 	padding: 5px;
 	padding-top: 10px;
 	font-size: 0.8em;
@@ -101,10 +85,40 @@
 
 .project__link__icons {
 	display: flex;
-	/* border: 1px solid turquoise; */
+	border: 1px solid turquoise;
 	gap: 20px;
 	padding-top: 5px;
 	justify-content: flex-start;
 
 	align-items: center;
+	text-decoration: none;
+	padding: 5px;
+	padding-top: 10px;
+	font-size: 0.8em;
+	padding-left: 0px;
+	/* margin-top: 45%; */
+}
+
+.gitlab__link,
+.external {
+	text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+	.project__description {
+		flex: 1;
+		border: 4px solid blue;
+
+		display: none;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		letter-spacing: 0.8px;
+		margin-bottom: 10%;
+		margin-left: 10%;
+		gap: 2%;
+	}
+
+	.box {
+		z-index: 1;
+	}
 }

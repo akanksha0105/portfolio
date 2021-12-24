@@ -6,8 +6,10 @@ import ProjectDescription from "./ProjectDescription";
 function Work() {
 	return (
 		<div className="work">
-			<ProjectDescription />
-			<ProjectCard />
+			<div className="work__box">
+				<ProjectDescription />
+				<ProjectCard />
+			</div>
 		</div>
 	);
 }

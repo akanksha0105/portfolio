@@ -8,7 +8,7 @@ function Home() {
 		<div className="home">
 			<Header />
 			<About />
-			<LineSeparator />
+			{/* <LineSeparator /> */}
 		</div>
 	);
 }

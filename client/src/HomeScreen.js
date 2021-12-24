@@ -9,7 +9,7 @@ function HomeScreen() {
 		<div className="home__screen">
 			<Home />
 			<Work />
-			<LineSeparator />
+			{/* {/* <LineSeparator /> */}
 			<Contact />
 		</div>
 	);
