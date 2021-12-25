@@ -15,6 +15,10 @@ function Header() {
 	const onNavigationIconClick = () => {
 		setShow(true);
 	};
+
+	const closeNav = () => {
+		setShow(false);
+	};
 	return (
 		<div className="header">
 			<div className="header__left">
@@ -23,6 +27,25 @@ function Header() {
 				</Link>
 
 				<div className="fa fa-bars" onClick={onNavigationIconClick}></div>
+				<div className={show ? "sidenav" : "sidenav display-none"}>
+					<a href="" className="closebtn" onClick={closeNav}>
+						&times;
+					</a>{" "}
+					<a className="sidenav__option" href="/">
+						Home
+					</a>{" "}
+					<a className="sidenav__option" href="/work">
+						Works
+					</a>{" "}
+					<a
+						className="sidenav__option"
+						href="https://www.linkedin.com/in/akanksha-mittal0105/">
+						LinkedIn
+					</a>
+					<a className="sidenav__option" href="#">
+						Resume
+					</a>
+				</div>
 			</div>
 			<div className="header__center">
 				<div className="logo">
