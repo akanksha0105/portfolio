@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import { Link } from "react-scroll";
 import logo from "./images/logo.png";
+import Pdf from "./images/resume.pdf";
 
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
@@ -34,15 +35,22 @@ function Header() {
 					<a className="sidenav__option" href="/">
 						Home
 					</a>{" "}
-					<a className="sidenav__option" href="/work">
-						Works
-					</a>{" "}
+					<Link
+						className="works__link"
+						to="work"
+						spy={true}
+						smooth={true}
+						onClick={closeNav}>
+						<a className="sidenav__option" href="">
+							Works
+						</a>
+					</Link>
 					<a
 						className="sidenav__option"
 						href="https://www.linkedin.com/in/akanksha-mittal0105/">
 						LinkedIn
 					</a>
-					<a className="sidenav__option" href="#">
+					<a className="sidenav__option" href={Pdf}>
 						Resume
 					</a>
 				</div>
@@ -60,7 +68,7 @@ function Header() {
 					</a>
 				</div>
 				<div className="header__option__right">
-					<a href="">Resume</a>
+					<a href={Pdf}>Resume</a>
 				</div>
 				{/* <a
 					className="social__media__icon"

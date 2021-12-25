@@ -32,17 +32,11 @@ function Contact() {
 							className="social__icon"
 							href="https://www.linkedin.com/in/akanksha-mittal0105/"
 							target="_blank">
-							<LinkedInIcon />
+							LINKEDIN
 						</a>
 
 						<a className="social__icon" href="#" target="_blank">
-							<TwitterIcon />
-						</a>
-						<a className="social__icon" href="#" target="_blank">
-							<FacebookOutlinedIcon />
-						</a>
-						<a className="social__icon" href="#" target="_blank">
-							<InstagramIcon />
+							RESUME
 						</a>
 					</div>
 				</div>

@@ -158,6 +158,10 @@
 	text-decoration: none;
 	color: black;
 }
+.works__link {
+	text-decoration: none;
+	color: black;
+}
 
 .sidenav {
 	display: flex;

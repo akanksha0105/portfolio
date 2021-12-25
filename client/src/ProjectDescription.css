@@ -8,19 +8,18 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	/* padding-bottom: 150px; */
 	letter-spacing: 0.8px;
 	margin-bottom: 10%;
-	/* margin-right: 10%; */
 	margin-top: 5%;
 	margin-left: 10%;
-	gap: 2%;
+	gap: 0.5%;
 }
 
 .project__name {
 	border: 2px solid yellowgreen;
 	/* margin: 0px 0px 10px; */
 	font-size: 1.8em;
+	/* font-size: 2.5vw; */
 	line-height: 1.1;
 	color: black;
 	font-family: "Cormorant Garamond", serif;
@@ -42,11 +41,12 @@
 	width: 105%;
 
 	font-size: 0.9em;
+	/* font-size: 1.25vw; */
 	letter-spacing: 0.8px;
 	font-family: "Alegreya Sans", sans-serif;
 	color: hsl(0, 0%, 40%);
 	color: black;
-
+	margin-top: 6%;
 	font-weight: 400;
 	border-radius: 5px;
 	padding: 13px;
@@ -126,22 +126,6 @@
 		display: none;
 	}
 
-	/* .description {
-		border: 1px solid hsl(8, 95%, 87%);
-		
-		width: 105%;
-
-		font-size: 0.9em;
-		letter-spacing: 0.8px;
-		font-family: "Alegreya Sans", sans-serif;
-		color: hsl(0, 0%, 40%);
-		color: black;
-		display: flex;
-		font-weight: 400;
-		border-radius: 5px;
-		padding: 13px;
-	} */
-
 	.description {
 		display: flex;
 		width: 100%;
@@ -150,10 +134,10 @@
 		padding: 5px;
 		font-family: "Alegreya Sans", sans-serif;
 		justify-content: flex-start;
-		font-size: 1em;
+		font-size: 0.9em;
 	}
 
 	.project__name {
-		font-size: 1.2em;
+		font-size: 1.8em;
 	}
 }
