@@ -2,7 +2,7 @@
 .project__description {
 	/* margin-top: 50px; */
 
-	border: 4px solid blue;
+	/* border: 4px solid blue; */
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -16,7 +16,7 @@
 }
 
 .project__name {
-	border: 2px solid yellowgreen;
+	/* border: 2px solid yellowgreen; */
 	/* margin: 0px 0px 10px; */
 	font-size: 1.8em;
 	/* font-size: 2.5vw; */
@@ -49,7 +49,9 @@
 	margin-top: 6%;
 	font-weight: 400;
 	border-radius: 5px;
+	/* border-radius: 1%; */
 	padding: 13px;
+	padding: 2.5%;
 	position: relative;
 	z-index: 2;
 }
@@ -59,18 +61,20 @@
 }
 
 .project__card__description {
-	border: 2px solid blue;
+	/* border: 2px solid blue; */
 	background-color: hsl(0, 0%, 90%);
 	border-radius: 5px;
 	padding: 5px;
+	padding: 2%;
 }
 
 /* font-family: "Cormorant Garamond", serif; */
 
 .project__technologies {
 	display: flex;
-	border: 1px solid turquoise;
+	/* border: 1px solid turquoise; */
 	gap: 20px;
+
 	/* margin-top: 41%; */
 	padding: 5px;
 	padding-top: 10px;
@@ -83,7 +87,7 @@
 
 .project__link__icons {
 	display: flex;
-	border: 1px solid turquoise;
+	/* border: 1px solid turquoise; */
 	gap: 20px;
 	padding-top: 5px;
 	justify-content: flex-start;
@@ -104,11 +108,11 @@
 .external {
 	text-decoration: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
 	.project__description {
 		/* margin-top: 50px; */
 
-		border: 4px solid blue;
+		/* border: 4px solid blue; */
 		flex: 1;
 		display: flex;
 		flex-direction: column;
@@ -128,16 +132,31 @@
 
 	.description {
 		display: flex;
-		width: 100%;
+
 		border: 1px solid hsl(8, 95%, 87%);
+		background-color: hsl(0, 0%, 90%);
+		justify-content: center;
+		align-items: center;
 		color: black;
 		padding: 5px;
 		font-family: "Alegreya Sans", sans-serif;
 		justify-content: flex-start;
+		/* width: max-content; */
 		font-size: 0.9em;
 	}
 
 	.project__name {
 		font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.project__technologies {
+		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 200px) {
+	.project__technologies {
+		flex-direction: column;
 	}
 }

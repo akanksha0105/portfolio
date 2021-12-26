@@ -7,7 +7,7 @@
 	background-color: white;
 	width: 100vw;
 	height: 100vh;
-	border: 2px solid blue;
+	/* border: 2px solid blue; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -99,7 +99,7 @@
 
 @media screen and (max-width: 484px) {
 	.contact__message {
-		font-size: 0.5em;
+		font-size: 0.3rem;
 		/* display: block; */
 		flex-wrap: wrap;
 	}
@@ -125,6 +125,14 @@
 @media screen and (max-width: 900px) {
 	.contact__message {
 		font-size: 1.5em;
+		/* display: block; */
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.contact__message {
+		font-size: 1em;
 		/* display: block; */
 		flex-wrap: wrap;
 	}

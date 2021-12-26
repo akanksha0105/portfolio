@@ -2,12 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400&family=Amiri&family=Baloo+2&family=Cardo&family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Frank+Ruhl+Libre:wght@400;500;700&family=Nanum+Myeongjo:wght@800&family=PT+Sans&display=swap");
 
-.home__screen {
+/* .home__screen {
 	border: 4px solid lightseagreen;
-}
+} */
 .home {
-	border: 4px solid purple;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	/* border: 4px solid purple; */
+	/* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
 	background-color: hsl(0, 0%, 100%);
 	height: 100vh;
 	display: flex;
@@ -18,12 +18,12 @@
 */
 }
 
-.logo {
+/* .logo {
 	border: 1px solid green;
-}
+} */
 
 .header {
-	border: 4px solid red;
+	/* border: 4px solid red; */
 	background-color: hsl(0, 0%, 100%);
 	color: black;
 	display: flex;
@@ -37,13 +37,13 @@
 /* Change the dimensions of image in percentage */
 
 .logo > img {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	width: 150px;
 	height: 150px;
 }
 
 .header__left {
-	border: 4px solid blue;
+	/* border: 4px solid blue; */
 	flex: 1;
 	display: flex;
 	padding-bottom: 0;
@@ -78,7 +78,7 @@
 }
 
 .header__center {
-	border: 4px solid blue;
+	/* border: 4px solid blue; */
 	flex: 1;
 	display: flex;
 	align-items: center;
@@ -99,7 +99,7 @@
 }
 
 .header__right {
-	border: 4px solid blue;
+	/* border: 4px solid blue; */
 	display: flex;
 	flex: 1;
 	justify-content: flex-end;
@@ -158,10 +158,6 @@
 	text-decoration: none;
 	color: black;
 }
-.works__link {
-	text-decoration: none;
-	color: black;
-}
 
 .sidenav {
 	display: flex;
@@ -206,6 +202,11 @@
 	display: none;
 }
 
+.works__link > a {
+	text-decoration: none;
+	color: black;
+}
+
 @media screen and (max-width: 484px) {
 	.header__option__right {
 		display: none;
@@ -232,5 +233,10 @@
 
 	.header__left {
 		padding-left: 3%;
+	}
+
+	.works__link {
+		text-decoration: none;
+		color: black;
 	}
 }
