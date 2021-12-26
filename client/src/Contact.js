@@ -4,7 +4,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
+import Pdf from "./images/resume.pdf";
 function Contact() {
 	return (
 		<div className="contact">
@@ -35,7 +35,7 @@ function Contact() {
 							LINKEDIN
 						</a>
 
-						<a className="social__icon" href="#" target="_blank">
+						<a className="social__icon" href={Pdf} target="_blank">
 							RESUME
 						</a>
 					</div>

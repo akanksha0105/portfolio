@@ -239,4 +239,10 @@
 		text-decoration: none;
 		color: black;
 	}
+	body {
+		overflow-y: hidden;
+	}
+	.sidenav {
+		overflow-y: hidden;
+	}
 }

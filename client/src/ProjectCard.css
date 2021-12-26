@@ -27,21 +27,26 @@
 	transform: scale(1.1);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 600px) {
 	.card {
 		margin: 0%;
+		/* margin-left: 2%;
+		margin-right: 2%; */
+		display: flex;
 		flex: 1;
-		width: 100%;
+		width: 80%;
 		padding: 0%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
 		/* display: none; */
 	}
 
 	.work__box {
 		display: flex;
 		margin-top: 5%;
+		align-items: center;
 		/* flex-direction: column-reverse; */
 	}
 }
