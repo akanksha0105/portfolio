@@ -14,11 +14,24 @@ function Header() {
 	const [show, setShow] = useState(false);
 
 	const onNavigationIconClick = () => {
+		// document.body.classList.add("add-opacity");
+		document.body.classList.add("modal-open");
 		setShow(true);
+		console.log("hey", show);
+		let element1 = document.getElementsByClassName("sidebar");
+		console.log("element1[0]", element1[0]);
+
+		// element1[0].classList.add("old");
+
+		element1[0].classList.remove("add-opacity");
 	};
 
 	const closeNav = () => {
+		// document.body.classList.remove("add-opacity");
+		document.body.classList.remove("modal-open");
+
 		setShow(false);
+		console.log("hi");
 	};
 	return (
 		<div className="header">
@@ -28,31 +41,36 @@ function Header() {
 				</Link>
 
 				<div className="fa fa-bars" onClick={onNavigationIconClick}></div>
-				<div className={show ? "sidenav" : "sidenav display-none"}>
-					<a href="" className="closebtn" onClick={closeNav}>
-						&times;
-					</a>{" "}
-					<a className="sidenav__option" href="/">
-						Home
-					</a>{" "}
-					<Link
-						className="works__link"
-						to="work"
-						spy={true}
-						smooth={true}
-						onClick={closeNav}>
-						<a className="sidenav__option" href="">
-							Works
+
+				<div className="sidebar">
+					<div
+						id="sidenav__id"
+						className={show ? "sidenav" : "sidenav display-none"}>
+						<a href="" className="closebtn" onClick={closeNav}>
+							&times;
+						</a>{" "}
+						<a className="sidenav__option" href="/">
+							Home
+						</a>{" "}
+						<Link
+							className="works__link"
+							to="work"
+							spy={true}
+							smooth={true}
+							onClick={closeNav}>
+							<a className="sidenav__option" href="">
+								Works
+							</a>
+						</Link>
+						<a
+							className="sidenav__option"
+							href="https://www.linkedin.com/in/akanksha-mittal0105/">
+							LinkedIn
 						</a>
-					</Link>
-					<a
-						className="sidenav__option"
-						href="https://www.linkedin.com/in/akanksha-mittal0105/">
-						LinkedIn
-					</a>
-					<a className="sidenav__option" href={Pdf}>
-						Resume
-					</a>
+						<a className="sidenav__option" href={Pdf}>
+							Resume
+						</a>
+					</div>
 				</div>
 			</div>
 			<div className="header__center">

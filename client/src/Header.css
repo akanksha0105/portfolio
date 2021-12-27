@@ -56,6 +56,7 @@
 	font-family: "PT Sans", sans-serif;
 	text-transform: uppercase;
 	padding-left: 1.2vw;
+	overflow-y: hidden;
 }
 
 .header__option__left {
@@ -159,12 +160,15 @@
 	color: black;
 }
 
+.sidebar {
+	border: 4px solid yellow;
+}
 .sidenav {
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
 	align-items: flex-start;
-	height: 100%;
+	height: 90vh;
 	width: 400px;
 	position: absolute;
 	z-index: 1;
@@ -174,7 +178,8 @@
 	overflow-y: auto;
 	transition: 0.5s;
 	padding-top: 60px;
-	border: 1px solid red;
+	/* opacity: 0 !important ; */
+	/* border: 1px solid red; */
 }
 
 .sidenav > a {
@@ -205,6 +210,21 @@
 .works__link > a {
 	text-decoration: none;
 	color: black;
+}
+.modal-open {
+	position: fixed;
+	overflow-y: hidden;
+	background-color: transparent;
+}
+.add-opacity {
+	background-color: black;
+	opacity: 0.2;
+	position: relative;
+}
+
+.old {
+	background-color: white;
+	opacity: 0;
 }
 
 @media screen and (max-width: 484px) {
@@ -239,9 +259,7 @@
 		text-decoration: none;
 		color: black;
 	}
-	body {
-		overflow-y: hidden;
-	}
+
 	.sidenav {
 		overflow-y: hidden;
 	}
