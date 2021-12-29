@@ -4,11 +4,11 @@ import { Link } from "react-scroll";
 import logo from "./images/logo.png";
 import Pdf from "./images/resume.pdf";
 
-import TwitterIcon from "@mui/icons-material/Twitter";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { orange } from "@mui/material/colors";
+// import TwitterIcon from "@mui/icons-material/Twitter";
+// import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import { orange } from "@mui/material/colors";
 
 function Header() {
 	const [show, setShow] = useState(false);

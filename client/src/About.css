@@ -19,6 +19,8 @@
 	font-family: "Amiri", serif;
 	font-weight: 400;
 	font-size: 4rem;
+
+	font-size: 2.5em;
 	/* font-size: 5vw; */
 
 	line-height: 1.4;
@@ -38,9 +40,8 @@
 	.about__text > h1 {
 		font-family: "Amiri", serif;
 		font-weight: 400;
-		font-size: 6vw;
-		line-height: 1.4;
 		letter-spacing: -0.025em;
+		font-size: 1.3em;
 	}
 }
 

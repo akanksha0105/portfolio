@@ -8,7 +8,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	letter-spacing: 0.8px;
+	letter-spacing: 0.05em;
 	margin-bottom: 10%;
 	margin-top: 5%;
 	margin-left: 10%;
@@ -51,13 +51,14 @@
 	border-radius: 5px;
 	/* border-radius: 1%; */
 	padding: 13px;
+
 	padding: 2.5%;
 	position: relative;
 	z-index: 2;
 }
 
 .box:hover {
-	border: 1px solid hsl(8, 95%, 57%);
+	border: 1px solid hsl(8, 40%, 57%);
 }
 
 .project__card__description {
@@ -146,6 +147,8 @@
 		margin-top: 5%;
 		width: 90%;
 		border-radius: 2%;
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 
 	.project__name {

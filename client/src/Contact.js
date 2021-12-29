@@ -11,7 +11,7 @@ function Contact() {
 			<div className="footer">
 				<div className="contact__message__bar">
 					<div className="contact__message">
-						<div>Let’s create something amazing together</div>
+						<div>Let’s create something amazing together</div>{" "}
 						<a
 							href="mailto:mittalakanksha0105@gmail.com?subject=Hey!"
 							className="send__email">
