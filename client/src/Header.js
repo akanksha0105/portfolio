@@ -3,106 +3,77 @@ import "./Header.css";
 import { Link } from "react-scroll";
 import logo from "./images/logo.png";
 import Pdf from "./images/resume.pdf";
-
-// import TwitterIcon from "@mui/icons-material/Twitter";
-// import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-// import InstagramIcon from "@mui/icons-material/Instagram";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import { orange } from "@mui/material/colors";
+import { linkedin_url, resume_url } from "./utilities/helper";
 
 function Header() {
 	const [show, setShow] = useState(false);
 
 	const onNavigationIconClick = () => {
-		// document.body.classList.add("add-opacity");
 		document.body.classList.add("modal-open");
 		setShow(true);
-		console.log("hey", show);
-		// let element1 = document.getElementsByClassName("sidebar");
-		// console.log("element1[0]", element1[0]);
 
-		// element1[0].classList.add("old");
-
-		// element1[0].classList.remove("add-opacity");
 	};
 
 	const closeNav = () => {
-		// document.body.classList.remove("add-opacity");
 		document.body.classList.remove("modal-open");
-
 		setShow(false);
-		console.log("hi");
 	};
 	return (
-		<div className="header">
-			<div className="header__left">
-				<Link to="work" spy={true} smooth={true}>
-					<div className="header__option__left">Works</div>
+		<div className='header'>
+			<div className='header__left'>
+				<Link to='work' spy={true} smooth={true}>
+					<div className='header__option__left'>Works</div>
 				</Link>
 
-				<div className="fa fa-bars" onClick={onNavigationIconClick}></div>
+				<div className='fa fa-bars' onClick={onNavigationIconClick}></div>
 
 				{/* <div className="sidebar"></div> */}
 				<div
-					id="sidenav__id"
+					id='sidenav__id'
 					className={show ? "sidenav" : "sidenav display-none"}>
-					<a href="" className="closebtn" onClick={closeNav}>
+					<a href='' className='closebtn' onClick={closeNav}>
 						&times;
 					</a>{" "}
-					<a className="sidenav__option" href="/">
+					<a className='sidenav__option' href='/'>
 						Home
 					</a>{" "}
 					<Link
-						className="works__link"
-						to="work"
+						className='works__link'
+						to='work'
 						spy={true}
 						smooth={true}
 						onClick={closeNav}>
-						<a className="sidenav__option" href="">
+						<a className='sidenav__option' href=''>
 							Works
 						</a>
 					</Link>
-					<a
-						className="sidenav__option"
-						href="https://www.linkedin.com/in/akanksha-mittal0105/">
+					<a className='sidenav__option' href={linkedin_url}>
 						LinkedIn
 					</a>
-					<a className="sidenav__option" href={Pdf}>
+					<a
+						className='sidenav__option'
+						href={resume_url}
+						target='_blank'
+						rel='noopener noreferrer'>
 						Resume
 					</a>
 				</div>
 			</div>
-			<div className="header__center">
-				<div className="logo">
-					<img src={logo} alt="" />
+			<div className='header__center'>
+				<div className='logo'>
+					<img src={logo} alt='' />
 				</div>
-				<div className="profile__name">Akanksha Mittal</div>
+				<div className='profile__name'>Akanksha Mittal</div>
 			</div>
-			<div className="header__right">
-				<div className="header__option__right">
-					<a href="https://www.linkedin.com/in/akanksha-mittal0105/">
-						LinkedIn
+			<div className='header__right'>
+				<div className='header__option__right'>
+					<a href={linkedin_url}>LinkedIn</a>
+				</div>
+				<div className='header__option__right'>
+					<a href={resume_url} target='_blank' rel='noopener noreferrer'>
+						Resume
 					</a>
 				</div>
-				<div className="header__option__right">
-					<a href={Pdf}>Resume</a>
-				</div>
-				{/* <a
-					className="social__media__icon"
-					href="https://www.linkedin.com/in/akanksha-mittal0105/"
-					target="_blank">
-					<LinkedInIcon />
-				</a>
-
-				<a className="social__media__icon" href="#" target="_blank">
-					<TwitterIcon />
-				</a>
-				<a className="social__media__icon" href="#" target="_blank">
-					<FacebookOutlinedIcon />
-				</a>
-				<a className="social__media__icon" href="#" target="_blank">
-					<InstagramIcon />
-				</a> */}
 			</div>
 		</div>
 	);
