@@ -35,7 +35,7 @@ function ProjectDescription() {
 					className='gitlab__link'
 					href='https://github.com/akanksha0105/kitty-share'>
 					<i
-						class='fa fa-gitlab'
+						class='fa fa-github'
 						style={({ fontSize: "48px" }, { color: "black" })}></i>
 				</a>
 
